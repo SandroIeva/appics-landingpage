@@ -1,17 +1,21 @@
-# Baked Design reconstruction
+# APPICS — Social × Creation Lab
 
-Faithful reconstruction of the public homepage at https://baked.design/, with its original scroll-controlled immersive gallery, pointer perspective, pause control, and responsive selected-work section.
+Landingpage concept combining the Baked Design spatial scroll gallery with APPICS imagery, turquoise brand colors, and German social/creator copy.
 
-## Preview
+## Open locally
 
-Run `python3 -m http.server 4173 --directory dist` and open http://localhost:4173.
+Run `python3 -m http.server 4173 --bind 127.0.0.1 --directory dist` and open http://127.0.0.1:4173. No login is required.
 
-## Structure
+## Edit
 
-- `dist/index.html`: homepage, inline styles, gallery configuration and content.
-- `dist/_astro/World.astro_astro_type_script_index_0_lang.C46ZrB17.js`: scroll progress, pointer movement, gallery transitions and pause behavior.
-- `dist/_astro/wall-model.WRL-ahOX.js`: gallery rendering.
+- `dist/index.html`: complete page markup, text, gallery image configuration (`worldData`).
+- `dist/appics.css`: custom styles, colors, responsive layouts.
+- `dist/assets/appics/`: locally stored APPICS images and logo.
+- `dist/_astro/World.astro_astro_type_script_index_0_lang.C46ZrB17.js`: retained Baked header animation, scroll progress and perspective.
+- `content.html`: editorial markup snapshot; edit `dist/index.html` for the running page.
 
-Original public assets and animation modules are retained to reproduce the requested effect precisely. Images, videos and fonts load from baked.design. Other pages and booking links lead to their original destinations. Analytics entrypoints have been removed. This is a private reconstruction, not an official Baked Design website.
+## Sources and scope
 
-Verified in browser: initial gallery rendering, scroll-driven opening, revealed introduction, and pause/play state.
+Public visuals and app information: https://appics.app/ . Original spatial header code: https://baked.design/ . This is a design concept; Creation Lab is proposed positioning, not an implemented content editor. App download links lead to the official app stores. Community, APX, and legal links lead to APPICS. No analytics or credential flows are integrated.
+
+The original Baked reconstruction remains recoverable in Git commit 79326eadd86d34b1e808bf124e3502abb8fc29d5.
