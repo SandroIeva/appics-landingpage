@@ -1,0 +1,1 @@
+var e=[];function t(t){n();for(let n=t;n&&n!==document.body;n=n.parentElement)for(let t of n.parentElement?.children??[])t!==n&&!t.inert&&t.tagName!==`SCRIPT`&&t.tagName!==`STYLE`&&(t.inert=!0,e.push(t))}function n(){e.forEach(e=>e.inert=!1),e=[]}export{t as n,n as t};

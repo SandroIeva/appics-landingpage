@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["_astro/metal.Wfc3fnsx.js","_astro/metal.CF_B1VLD.js"])))=>i.map(i=>d[i]);
+import{t as e}from"./preload-helper.B3nfOi5I.js";document.querySelector(`[data-metal]`)&&(window.requestIdleCallback||(e=>setTimeout(e,200)))(()=>e(()=>import(`./metal.Wfc3fnsx.js`),__vite__mapDeps([0,1])));

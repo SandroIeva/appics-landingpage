@@ -1,0 +1,1 @@
+function e(e,t){if(!e||e.hidden||matchMedia(`(prefers-reduced-motion: reduce)`).matches){t();return}let n=e._leave=(e._leave||0)+1;e.classList.add(`leaving`),setTimeout(()=>{e._leave===n&&(e.classList.remove(`leaving`),t())},150)}function t(e){e&&(e._leave=(e._leave||0)+1,e.classList.remove(`leaving`))}export{e as n,t};

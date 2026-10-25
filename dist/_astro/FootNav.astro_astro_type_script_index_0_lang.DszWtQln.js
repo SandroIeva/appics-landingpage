@@ -1,0 +1,1 @@
+for(let e of document.querySelectorAll(`[data-scrap]`)){let t=document.getElementById(e.getAttribute(`aria-controls`));if(!t)continue;let n=n=>{e.setAttribute(`aria-expanded`,String(n)),t.hidden=!n};n(!1),e.addEventListener(`click`,()=>n(e.getAttribute(`aria-expanded`)!==`true`))}
