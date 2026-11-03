@@ -77,4 +77,4 @@ Journal entry and viewport reveals are in `dist/journal/reveal.js`: cover-first 
 
 ## GitHub source
 
-Website and Journal are maintained together in the private `SandroIeva/appics-landingpage` repository. Commit and push completed changes to keep GitHub current. Runtime-ready images are included in `dist/`; original image sources in `APPICS/` and local access credentials are excluded. Articles edited in the browser and newsletter signups remain in private Vercel Blob storage, outside Git.
+Website and Journal are maintained together in the public `SandroIeva/appics-landingpage` repository. Commit and push completed changes to keep GitHub current. Runtime-ready images are included in `dist/`; original image sources in `APPICS/` and local access credentials are excluded. Articles edited in the browser and newsletter signups remain in private Vercel Blob storage, outside Git.
