@@ -1,0 +1,344 @@
+[
+  {
+    "id": "make-something-only-you-can-make",
+    "slug": "make-something-only-you-can-make",
+    "title": "Make something only you can make.",
+    "category": "Creativity",
+    "excerpt": "A fresh perspective starts with the things that make you, you. A field guide to finding your creative voice.",
+    "image": "/assets/creators/creator-2fd5aef302e58d.webp",
+    "imageAlt": "A creator in a colourful editorial outfit",
+    "author": "APPICS Journal",
+    "status": "published",
+    "featured": true,
+    "order": 0,
+    "publishedAt": null,
+    "updatedAt": "2026-11-01T00:00:00.000Z",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "There is a moment before every idea becomes something real. Before the first photograph, the first note, the first line. It is the moment when you decide that your perspective is worth sharing. Start there."
+      },
+      {
+        "type": "heading",
+        "text": "Follow what keeps pulling you back."
+      },
+      {
+        "type": "paragraph",
+        "text": "Your creative voice rarely arrives fully formed. It grows out of the music you replay, the colours you notice, the places you return to, and the questions you cannot leave alone. Collect those things. A folder of references, a few voice notes, or a page of sketches can tell you more than a perfectly written plan."
+      },
+      {
+        "type": "paragraph",
+        "text": "Look for connections rather than a signature style. What does a favourite photograph have in common with the track you have been listening to? Perhaps it is a feeling, a rhythm, or an unexpected contrast. That connection is a useful starting point."
+      },
+      {
+        "type": "heading",
+        "text": "Make the small version first."
+      },
+      {
+        "type": "paragraph",
+        "text": "Give yourself one clear constraint: one image, a thirty-second sound, a single scene. A smaller canvas makes it easier to experiment without turning every decision into a statement about who you are. Finish a version, step back, and notice what feels alive."
+      },
+      {
+        "type": "quote",
+        "text": "Your perspective does not have to look like anyone else’s to belong."
+      },
+      {
+        "type": "heading",
+        "text": "Let the conversation change the work."
+      },
+      {
+        "type": "paragraph",
+        "text": "Share the process as well as the result. Ask a specific question instead of asking whether something is good. Which detail stays with people? Where do they want to look next? Feedback becomes useful when it opens a direction rather than closes one."
+      },
+      {
+        "type": "paragraph",
+        "text": "Then make another version. A creative practice is built through returning, noticing, and trying again. You do not need to have everything figured out before you begin. You just need something you want to explore."
+      }
+    ]
+  },
+  {
+    "id": "find-your-own-frequency",
+    "slug": "find-your-own-frequency",
+    "title": "Find your own frequency.",
+    "category": "Music",
+    "excerpt": "From a voice note to a first track: make room for a sound that feels like yours.",
+    "image": "/assets/creators/creator-f7d302cc7a4ff3.webp",
+    "imageAlt": "A DJ performing under blue light",
+    "author": "APPICS Journal",
+    "status": "published",
+    "featured": false,
+    "order": 1,
+    "publishedAt": null,
+    "updatedAt": "2026-11-01T00:00:00.000Z",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "A rhythm on a train platform. A melody recorded on your phone. The room tone before a performance begins. Music often starts with noticing something ordinary closely enough to hear it differently."
+      },
+      {
+        "type": "heading",
+        "text": "Start with a feeling, not a genre."
+      },
+      {
+        "type": "paragraph",
+        "text": "Choose three words for the atmosphere you want to create. Warm, restless, weightless. Use them to guide your choices of texture, tempo, and space. When you get stuck, return to those words rather than adding another layer."
+      },
+      {
+        "type": "paragraph",
+        "text": "Build a small collection of sounds you have recorded yourself. A door closing can become percussion; a quiet conversation can suggest a rhythm. You do not need expensive equipment to start listening with intention."
+      },
+      {
+        "type": "heading",
+        "text": "Leave space in the arrangement."
+      },
+      {
+        "type": "paragraph",
+        "text": "Try removing one element at a time. Which sound is carrying the idea? Which part only makes the track louder? Contrast gives a piece movement: dense and sparse, close and distant, familiar and unexpected."
+      },
+      {
+        "type": "quote",
+        "text": "Sometimes the most interesting part of a track is what you leave out."
+      },
+      {
+        "type": "heading",
+        "text": "Share a work in progress."
+      },
+      {
+        "type": "paragraph",
+        "text": "A short loop can begin a conversation. Tell people what you are exploring and invite a response: a bass line, a visual, a movement. Collaboration often begins with a small opening rather than a finished brief."
+      },
+      {
+        "type": "paragraph",
+        "text": "Keep your early versions. Hearing where an idea started can remind you what made it exciting, and a discarded fragment may become the beginning of the next piece."
+      }
+    ]
+  },
+  {
+    "id": "movement-is-a-language",
+    "slug": "movement-is-a-language",
+    "title": "Movement is a language.",
+    "category": "Community",
+    "excerpt": "A different kind of conversation happens when people create together.",
+    "image": "/assets/creators/creator-6809cdca453a65.webp",
+    "imageAlt": "Two dancers performing together",
+    "author": "APPICS Journal",
+    "status": "published",
+    "featured": false,
+    "order": 2,
+    "publishedAt": null,
+    "updatedAt": "2026-11-01T00:00:00.000Z",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Some ideas are easier to move than to explain. A gesture, a pause, the distance between two people: movement can communicate before a single word is spoken."
+      },
+      {
+        "type": "heading",
+        "text": "Make room for another perspective."
+      },
+      {
+        "type": "paragraph",
+        "text": "In a collaboration, each person brings a different way of paying attention. One notices rhythm, another notices light, another knows when to stop. The point is not to erase those differences. It is to discover what happens between them."
+      },
+      {
+        "type": "paragraph",
+        "text": "Begin with a simple shared prompt. Choose a place, a feeling, or a short piece of music. Make something separately, then put the responses next to each other. Where do they connect? Where do they disagree?"
+      },
+      {
+        "type": "heading",
+        "text": "Show the process."
+      },
+      {
+        "type": "paragraph",
+        "text": "A rehearsal can be as compelling as a finished performance. Share a detail that reveals how the work is made: a repeated movement, a conversation about timing, an unexpected mistake. Context gives people a way into the work."
+      },
+      {
+        "type": "quote",
+        "text": "Community grows when people feel invited to contribute."
+      },
+      {
+        "type": "heading",
+        "text": "Keep the invitation open."
+      },
+      {
+        "type": "paragraph",
+        "text": "Credit the people who helped shape the idea. Ask how they want to be represented. Give collaborators space to tell the story in their own words. A shared project should leave room for more than one voice."
+      },
+      {
+        "type": "paragraph",
+        "text": "The strongest creative communities are not defined by everyone making the same thing. They are defined by curiosity, generosity, and the willingness to try something together."
+      }
+    ]
+  },
+  {
+    "id": "a-world-beyond-the-frame",
+    "slug": "a-world-beyond-the-frame",
+    "title": "A world beyond the frame.",
+    "category": "Creation Lab",
+    "excerpt": "Build a visual world from a single idea, one deliberate choice at a time.",
+    "image": "/assets/creators/creator-c625292f1efe81.webp",
+    "imageAlt": "Colourful mountains surrounding an alpine lake",
+    "author": "APPICS Journal",
+    "status": "published",
+    "featured": false,
+    "order": 3,
+    "publishedAt": null,
+    "updatedAt": "2026-11-01T00:00:00.000Z",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "A landscape can be more than a background. It can suggest a story, a mood, and a way of moving through the world. Building a visual world starts with deciding what you want someone to feel when they enter it."
+      },
+      {
+        "type": "heading",
+        "text": "Give the world a few rules."
+      },
+      {
+        "type": "paragraph",
+        "text": "Choose a limited palette, a quality of light, and a sense of scale. Is everything intimate, or impossibly large? Are surfaces soft, reflective, weathered? A handful of consistent decisions will make an imagined place feel more convincing than a hundred unrelated details."
+      },
+      {
+        "type": "paragraph",
+        "text": "Write a short description before reaching for a tool. Describe the atmosphere as clearly as the objects. A quiet courtyard at blue hour suggests different choices from an abandoned city beneath a bright pink sky."
+      },
+      {
+        "type": "heading",
+        "text": "Explore, then edit."
+      },
+      {
+        "type": "paragraph",
+        "text": "Whether you sketch, photograph, model, or experiment with generative tools, keep a record of what changes between versions. Compare them side by side. Choose the one that supports the story rather than the one with the most detail."
+      },
+      {
+        "type": "quote",
+        "text": "A strong world leaves space for someone else’s imagination."
+      },
+      {
+        "type": "heading",
+        "text": "Connect the image to a story."
+      },
+      {
+        "type": "paragraph",
+        "text": "Ask what happened just before the scene and what might happen next. Even a still image can carry a sense of time. A light left on, an open door, or a trail leading out of view can be enough."
+      },
+      {
+        "type": "paragraph",
+        "text": "Share the choices behind the image. References, sketches, and earlier versions can help other creators understand your thinking and start their own experiments."
+      }
+    ]
+  },
+  {
+    "id": "personal-style-is-a-practice",
+    "slug": "personal-style-is-a-practice",
+    "title": "Personal style is a practice.",
+    "category": "Culture",
+    "excerpt": "Less about following a look. More about noticing what feels like you.",
+    "image": "/assets/creators/creator-8e34d7ef8226a6.webp",
+    "imageAlt": "Fashion portrait against a blue background",
+    "author": "APPICS Journal",
+    "status": "published",
+    "featured": false,
+    "order": 4,
+    "publishedAt": null,
+    "updatedAt": "2026-11-01T00:00:00.000Z",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Personal style is not a fixed destination. It shifts with the places you go, the people you meet, and the ideas you are working through. That is what makes it personal."
+      },
+      {
+        "type": "heading",
+        "text": "Look beyond the reference image."
+      },
+      {
+        "type": "paragraph",
+        "text": "When something catches your eye, name the detail that does the work. The shape of a sleeve, an unlikely colour pairing, the tension between a polished surface and something worn. Being specific helps you turn inspiration into a decision rather than a copy."
+      },
+      {
+        "type": "paragraph",
+        "text": "Try combining references from different places. A film still, a building, a favourite album cover. Style becomes more interesting when it is a conversation between influences."
+      },
+      {
+        "type": "heading",
+        "text": "Document what changes."
+      },
+      {
+        "type": "paragraph",
+        "text": "Take a photograph of an everyday look, not only the special occasion. Over time, patterns will appear. You may keep returning to the same silhouette or colour, or discover that the unexpected choice felt the most natural."
+      },
+      {
+        "type": "quote",
+        "text": "The details you choose are a way of telling your own story."
+      },
+      {
+        "type": "heading",
+        "text": "Make space for experimentation."
+      },
+      {
+        "type": "paragraph",
+        "text": "Change one thing. Borrow a shape, try a different proportion, or put together pieces you would usually keep apart. Small experiments take the pressure off getting a whole identity right."
+      },
+      {
+        "type": "paragraph",
+        "text": "Share what you learned, not only what you wore. A conversation about process makes room for other people to find their own way in."
+      }
+    ]
+  },
+  {
+    "id": "share-the-story-behind-the-image",
+    "slug": "share-the-story-behind-the-image",
+    "title": "Share the story behind the image.",
+    "category": "Creators",
+    "excerpt": "The finished post is only one part of the creative process. Let people see a little more.",
+    "image": "/assets/creators/creator-ebe7a68d3ad230.webp",
+    "imageAlt": "An expressive close-up portrait",
+    "author": "APPICS Journal",
+    "status": "published",
+    "featured": false,
+    "order": 5,
+    "publishedAt": null,
+    "updatedAt": "2026-11-01T00:00:00.000Z",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "A compelling image can stop someone scrolling. A good story can give them a reason to stay. Sharing your work is also a chance to share what matters to you."
+      },
+      {
+        "type": "heading",
+        "text": "Give people a way in."
+      },
+      {
+        "type": "paragraph",
+        "text": "Start with a concrete detail. Where were you? What were you trying to capture? What changed your mind? Specific observations feel more immediate than a broad statement about creativity."
+      },
+      {
+        "type": "paragraph",
+        "text": "You do not need to explain every choice. Choose the part of the process that surprised you, then let the work do the rest. A short caption can carry a lot when it comes from a clear point of view."
+      },
+      {
+        "type": "heading",
+        "text": "Create a rhythm you can sustain."
+      },
+      {
+        "type": "paragraph",
+        "text": "A useful creative routine makes space for making as well as posting. Collect fragments while you work, then decide what is worth sharing. Not every moment needs to become content, and not every piece needs to be perfect to begin a conversation."
+      },
+      {
+        "type": "quote",
+        "text": "Sharing is an invitation, not the end of the process."
+      },
+      {
+        "type": "heading",
+        "text": "Pay attention to the response."
+      },
+      {
+        "type": "paragraph",
+        "text": "Notice which questions people ask and which details they return to. Reply thoughtfully, credit your influences, and be curious about the work other people share. The exchange matters as much as the post."
+      },
+      {
+        "type": "paragraph",
+        "text": "Let your next piece grow from that conversation. The aim is to build a practice that still feels like yours, with room for the people who connect with it."
+      }
+    ]
+  }
+]

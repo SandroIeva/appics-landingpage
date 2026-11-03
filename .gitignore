@@ -3,3 +3,18 @@ prepare.py
 download.py
 script-paths.json
 *.tar.gz
+.vercel
+.env*
+
+node_modules/
+.env*
+.editor-access.txt
+
+# Local originals and working references (runtime assets live in dist/)
+.DS_Store
+APPICS/
+backups/
+before-dfm.html
+categories.html
+collective-content.html
+dfm-content.html

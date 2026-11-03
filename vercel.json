@@ -1,0 +1,31 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "node scripts/build-journal.js",
+  "installCommand": "npm ci --ignore-scripts",
+  "outputDirectory": "dist",
+  "functions": {
+    "api/journal.js": {
+      "includeFiles": "content/**",
+      "maxDuration": 30
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/journal",
+      "destination": "/api/journal?action=index"
+    },
+    {
+      "source": "/journal/",
+      "destination": "/api/journal?action=index"
+    },
+    {
+      "source": "/journal/story/:slug",
+      "destination": "/api/journal?action=article&slug=:slug"
+    },
+    {
+      "source": "/journal/story/:slug/",
+      "destination": "/api/journal?action=article&slug=:slug"
+    }
+  ]
+}
