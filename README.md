@@ -1,80 +1,92 @@
-# Appics LandingPage
+# APPICS — Landing Page & Journal
 
-Landingpage concept combining the Baked Design spatial scroll gallery with APPICS imagery, turquoise brand colors, and German social/creator copy.
+The APPICS marketing website and Journal live in this repository together with a small, password-protected browser CMS. The interface and editorial copy are in English. The visual language uses a dark purple background, mint accents, Inter typography, rounded controls, and soft scroll animations.
 
-## Open locally
+## Live links
 
-Run `python3 -m http.server 4173 --bind 127.0.0.1 --directory dist` and open http://127.0.0.1:4173. No login is required.
+| Area | URL |
+| --- | --- |
+| Website | https://appics-landingpage.vercel.app/ |
+| Journal | https://appics-landingpage.vercel.app/journal/ |
+| CMS / editor | https://appics-landingpage.vercel.app/journal/editor/ |
+| Source | https://github.com/SandroIeva/appics-landingpage |
 
-## Edit
+The repository is public. The editor password, environment variables, article drafts, and newsletter addresses are **not** stored in GitHub. Ask the project owner for editor access and, if needed, Vercel project access through a private channel.
 
-- `dist/index.html`: complete page markup, text, gallery image configuration (`worldData`).
-- `dist/appics.css`: custom styles, colors, responsive layouts.
-- `dist/assets/appics/`: locally stored APPICS images and logo.
-- `dist/_astro/World.astro_astro_type_script_index_0_lang.C46ZrB17.js`: retained Baked header animation, scroll progress and perspective.
-- `content.html`: editorial markup snapshot; edit `dist/index.html` for the running page.
+## Start here
 
-## Sources and scope
+- **Publishing articles:** [CMS guide](docs/CMS.md)
+- **Developing or deploying the site:** [Development and operations](docs/DEVELOPMENT.md)
+- **Working with a coding agent:** [Agent handover](AGENTS.md)
 
-Public visuals and app information: https://appics.app/ . Original spatial header code: https://baked.design/ . This is a design concept; Creation Lab is proposed positioning, not an implemented content editor. App download links lead to the official app stores. Community, APX, and legal links lead to APPICS. No analytics or credential flows are integrated.
+## Run locally
 
-The original Baked reconstruction remains recoverable in Git commit 79326eadd86d34b1e808bf124e3502abb8fc29d5.
+Use a current Node.js LTS release with `process.loadEnvFile` support (Node 22+ recommended).
 
-## DFM mix (local preview)
+```sh
+git clone https://github.com/SandroIeva/appics-landingpage.git
+cd appics-landingpage
+npm ci
+npm run build
+npm run dev
+```
 
-The opening APPICS spatial gallery is retained. A new centre navigation moves to a fixed bottom dock with scrolling. The lower page follows the black, oversized editorial direction of https://www.dfm.mt/ with a pointer-following feathered image mask, staggered movement gallery and local video.
+Open http://127.0.0.1:4180/ or http://127.0.0.1:4180/journal/. To use port 4173 instead:
 
-- `dist/dfm.css`: DFM-inspired layout and navigation styling.
-- `dist/appics.js`: menu docking, soft spotlight tracking, video controls and gallery pause visibility.
-- `dist/assets/dfm/`: public DFM reference visuals and motion film, attributed in the page.
-- `before-dfm.html`: snapshot of the previous APPICS layout.
+```sh
+PORT=4173 npm run dev
+```
 
-This revision is local-only, as requested after the hosted preview login issue. Browser-verified: centred menu at scroll zero; menu fixed 18px from the bottom after scrolling; section navigation; pointer mask coordinates change; local video plays/pauses; no image errors or horizontal overflow in the mobile view.
+Without environment variables, the public pages render the starter articles; CMS login, saving, uploads, and newsletter registration need the configuration described in [Development and operations](docs/DEVELOPMENT.md). A plain static file server cannot run the CMS API.
 
-## Softer motion + Lenis
+## What is implemented?
 
-Lenis 1.3.27 is pinned and vendored in `dist/vendor/lenis/`, with its MIT license. `dist/smooth-scroll.js` initializes a single page scroll interpolator (lerp 0.065, wheel multiplier 0.9), uses native touch inertia, handles anchors, and respects reduced-motion preferences.
+| Area | Included |
+| --- | --- |
+| Landing page | Spatial hero image wall, soft scrolling, liquid effects, creator cards, AI sphere, Creation Lab sections, categories, product teasers, latest Journal entries |
+| Journal | Editorial overview, category filters, search, sticky sidebars, interview carousel, article pages, viewport reveals |
+| CMS | Shared password login, article drafts, image upload, preview, publication/unpublication, featured stories, order, revision conflict checks |
+| Newsletter | Signup form and private storage of registrations; **no email delivery, double opt-in, unsubscribe workflow, or subscriber management screen yet** |
+| AI prompt | Front-end creative-brief preview; **no AI generation API is connected** |
 
-Header adjustments retain the original Baked geometry: 1.22 viewport heights for the opening instead of 0.9, 150ms global follow instead of 100ms, 65–120ms staggered per-card easing, 220ms pointer follow, 200ms hover settling, and a slightly calmer ambient drift. The sticky hero now spans 260svh. The original module is backed up in `backups/world-before-smoothing.js`.
+The CMS edits **Journal articles**, not the landing-page layout or all website copy. Those are maintained in source files.
 
-## Cosmos-inspired category section
+## Source of truth
 
-`#categories` is directly after the spatial hero. Layout inspired by the “Build your world, your way” section at https://www.cosmos.so/ with original local CSS category illustrations, a horizontal card carousel, working Creative/Lifestyle filters and color swatches. Files: `dist/categories.css`, `dist/categories.js`; live markup is in `dist/index.html`, with an editorial snapshot in `categories.html`.
+- **GitHub:** application code, styles, bundled images, starter articles, documentation.
+- **Private Vercel Blob storage:** CMS article overrides/new articles, uploaded covers, saved article versions, newsletter registrations.
+- **Vercel environment settings:** storage token, password hash, session signing secret.
 
-Verified locally: next arrow advances the carousel, Lifestyle shows three matching cards, All restores all six, swatches update the art color and code, no horizontal page overflow.
+Saving a published article in the CMS updates the live Journal without a code push or redeployment. Pushing this repository does not back up the live CMS database. Keep code and storage backups separately.
 
-## Configured AI Sphere and prompt preview
+## Main files
 
-Below “Discover the Power of Creation”, the centre sphere embeds `dist/ai-sphere.html`, copied unchanged from the user's supplied Liquid Orb HTML export. Shader source, uniforms, palettes and initial `thinking` configuration are retained exactly. The export requires WebGPU, as in the source snippet.
+| Path | Purpose |
+| --- | --- |
+| `dist/index.html` | Landing-page markup, text, hero configuration |
+| `dist/typography.css`, `dist/appics.css`, other section CSS | Landing-page styling; later overrides matter |
+| `dist/appics.js`, `dist/hero-*.js`, `dist/categories.js` | Landing interactions and effects |
+| `dist/ai-sphere.html` | Embedded WebGPU sphere |
+| `lib/journal-views.js` | Shared Journal shell, overview, articles, newsletter markup |
+| `lib/journal.js` | Article validation, starter content, session helpers |
+| `api/journal.js` | CMS, article rendering, media and newsletter API |
+| `dist/journal/` | Journal styles, interactions, reveal animation and editor UI |
+| `content/journal-seed.json` | Starter content used when no stored override exists |
+| `scripts/build-journal.js` | Generated Journal fallbacks and landing-page latest-story section |
+| `scripts/dev-server.js` | Local full-stack server |
+| `vercel.json` | Build, function and Journal routing configuration |
 
-`dist/creation-lab.css` controls the surrounding layout. `dist/creation-lab.js` handles suggested prompts and a local creative-brief preview. No AI service is called or credentials used. Browser verified: sphere renders without logged errors, suggestions populate the field, submit previews the entered prompt, and the mobile page has no horizontal overflow.
+`dist/` is intentionally tracked: it contains editable application files as well as generated fallbacks. This is not a conventional framework source/build split. Read the development guide before editing generated pages.
 
-## APPICS Journal
+## Checks and deployment
 
-- Public journal: https://appics-landingpage.vercel.app/journal/
-- Protected editor: https://appics-landingpage.vercel.app/journal/editor/
-- Local full-stack preview: `npm run dev` (port 4180).
-- Existing static preview on port 4173 also serves the generated starter article pages.
-- `content/journal-seed.json`: six editable starter stories, written for this concept using the supplied imagery.
-- `lib/journal-views.js`: server-rendered magazine and article layouts.
-- `api/journal.js`: protected editor sessions, private drafts, image uploads, publication, and revision checks.
-- `dist/journal/`: journal styles, search/filter controls, and editor interface.
-- `npm test`: validation, escaping, and session tests.
-- `node tests/journal.integration.js`: creates a disposable draft, tests upload/privacy/publication, and removes its data.
-- `npm run build`: generates static fallbacks and updates the homepage journal links.
+```sh
+npm test
+npm run build
+```
 
-Articles and uploaded images live in the private Vercel Blob store `appics-journal`. Public readers receive only published articles. Moving an article back to drafts removes it from public listings and article URLs. Existing article versions are retained privately on every save. Edits use revision checks to prevent overwriting another session's changes.
+Deploy to the existing Vercel project with `vercel deploy --prod` after linking your checkout and obtaining project access. GitHub pushes alone should not be assumed to deploy the site: verify whether Git integration has been configured. See the [deployment checklist](docs/DEVELOPMENT.md#deployment).
 
-The editor supports title, introduction, category, author, cover image, image description, article text, feature placement, ordering, preview, save, publish, and unpublish. Uploads are resized to at most 1600 px and converted to WebP in the browser. Article text uses paragraphs, `##` headings, and `>` quotes; raw HTML is escaped.
+## Assets and origins
 
-Editor access details are in `.editor-access.txt` (local only). `.env.local` contains local server secrets. Both are excluded from Git and Vercel uploads. Production stores a salted password hash and a separate session signing secret. Sessions use an eight-hour HttpOnly, SameSite cookie (Secure in production). Mutation requests require the editor's same origin.
-
-Deploy updates with `vercel deploy --prod`. No article republish or site redeploy is needed when saving through the browser editor.
-
-The journal uses bounded sticky sidebars alongside full-width article cards, subtle image parallax on desktop, and a near-black In Conversation carousel between article groups. Articles in the Interviews category populate this series; until interview articles are published, it shows existing creative-perspective stories. Mobile uses native page scrolling and a three-item AI / logo / Mobile App dock. The mobile landing-page gallery uses 198px cards, 20px vertical gaps, and a narrower front-facing arc.
-
-Journal entry and viewport reveals are in `dist/journal/reveal.js`: cover-first entry, staggered typography and sidebar, then one-time reveals for article cards, conversations, and reading content. IntersectionObserver triggers Web Animations with a slow ease-out; completed animations release their inline effects, and reduced-motion preferences bypass the reveals.
-
-## GitHub source
-
-Website and Journal are maintained together in the public `SandroIeva/appics-landingpage` repository. Commit and push completed changes to keep GitHub current. Runtime-ready images are included in `dist/`; original image sources in `APPICS/` and local access credentials are excluded. Articles edited in the browser and newsletter signups remain in private Vercel Blob storage, outside Git.
+Runtime assets are bundled under `dist/assets/`; additional supplied image sources are in `images/`. The large local originals folder `APPICS/` is excluded. The design evolved from references including Baked, DFM, Cosmos, Preymaker, and i-D. Existing reference-derived code/assets are not a blanket license grant; review their provenance and usage rights before reuse in another project. Lenis is vendored with its MIT license under `dist/vendor/lenis/`.
