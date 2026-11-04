@@ -52,3 +52,38 @@ if(conversationTrack){
  const button=form.querySelector('button'),status=form.querySelector('.newsletter-status');button.disabled=true;status.textContent='Saving your signup…';
  try{const response=await fetch('/api/journal?action=subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:form.elements.email.value,consent:true,website:form.elements.website.value})});const result=await response.json();if(!response.ok)throw new Error(result.error||'Please try again.');form.reset();status.textContent="You're on the list. Thanks for joining APPICS.";}catch(error){status.textContent=error.message||'We could not save your signup. Please try again.';}finally{button.disabled=false}
  });
+
+const chapterLinks = [...document.querySelectorAll('.article-chapters a')];
+if (chapterLinks.length) {
+ const desktop = matchMedia('(min-width: 901px)');
+ const headings = chapterLinks.map(link => document.getElementById(link.hash.slice(1)));
+ let activeLink;
+ let frame;
+
+ function updateActiveChapter() {
+  frame = undefined;
+  let nextLink;
+  if (desktop.matches) {
+   const readingLine = Math.max(48, innerHeight * .25);
+   nextLink = chapterLinks[0];
+   for (let index = 0; index < headings.length; index++) {
+    if (headings[index].getBoundingClientRect().top > readingLine) break;
+    nextLink = chapterLinks[index];
+   }
+  }
+  if (nextLink === activeLink) return;
+  activeLink?.removeAttribute('aria-current');
+  nextLink?.setAttribute('aria-current', 'location');
+  activeLink = nextLink;
+ }
+
+ function scheduleChapterUpdate() {
+  if (frame === undefined) frame = requestAnimationFrame(updateActiveChapter);
+ }
+
+ addEventListener('scroll', scheduleChapterUpdate, { passive: true });
+ addEventListener('resize', scheduleChapterUpdate);
+ addEventListener('hashchange', scheduleChapterUpdate);
+ addEventListener('load', scheduleChapterUpdate);
+ updateActiveChapter();
+}
