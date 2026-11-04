@@ -11,7 +11,7 @@
     "status": "published",
     "featured": true,
     "order": 0,
-    "publishedAt": null,
+    "publishedAt": "2026-11-01T00:00:00.000Z",
     "updatedAt": "2026-11-01T00:00:00.000Z",
     "blocks": [
       {
@@ -68,7 +68,7 @@
     "status": "published",
     "featured": false,
     "order": 1,
-    "publishedAt": null,
+    "publishedAt": "2026-11-01T00:00:00.000Z",
     "updatedAt": "2026-11-01T00:00:00.000Z",
     "blocks": [
       {
@@ -125,7 +125,7 @@
     "status": "published",
     "featured": false,
     "order": 2,
-    "publishedAt": null,
+    "publishedAt": "2026-11-01T00:00:00.000Z",
     "updatedAt": "2026-11-01T00:00:00.000Z",
     "blocks": [
       {
@@ -182,7 +182,7 @@
     "status": "published",
     "featured": false,
     "order": 3,
-    "publishedAt": null,
+    "publishedAt": "2026-11-01T00:00:00.000Z",
     "updatedAt": "2026-11-01T00:00:00.000Z",
     "blocks": [
       {
@@ -239,7 +239,7 @@
     "status": "published",
     "featured": false,
     "order": 4,
-    "publishedAt": null,
+    "publishedAt": "2026-11-01T00:00:00.000Z",
     "updatedAt": "2026-11-01T00:00:00.000Z",
     "blocks": [
       {
@@ -296,7 +296,7 @@
     "status": "published",
     "featured": false,
     "order": 5,
-    "publishedAt": null,
+    "publishedAt": "2026-11-01T00:00:00.000Z",
     "updatedAt": "2026-11-01T00:00:00.000Z",
     "blocks": [
       {

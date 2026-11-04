@@ -174,3 +174,7 @@ html.journal-motion-ready [data-journal-reveal]:not(.is-revealed){opacity:0}
  .article-reading>aside:has(.article-chapters){display:block;width:100%;max-width:740px;margin-inline:auto}
  .article-reading>.article-body{grid-column:1}
 }
+
+.article-header>.eyebrow{font-size:clamp(16px,1.5vw,21px)}
+.article-header>.article-deck{font-size:clamp(21px,1.9vw,27px)}
+.article-byline{font-size:16px}
