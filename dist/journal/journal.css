@@ -164,12 +164,13 @@ html.journal-motion-ready [data-journal-reveal]:not(.is-revealed){opacity:0}
 
 .article-deck{font-size:clamp(23px,2.15vw,30px);line-height:1.45}
 .article-reading>.article-body{grid-column:2}
-.article-chapters ol{margin:0;padding-inline-start:1.4em}
-.article-chapters li+li{margin-top:10px}
-.article-chapters a{color:var(--text);text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--line)}
+.article-reading>aside:has(.article-chapters){max-width:300px}
+.article-chapters ol{margin:0;padding:0;list-style:none}
+.article-chapters li+li{margin-top:16px}
+.article-chapters a{display:block;font-size:16px;line-height:1.45;color:var(--text);text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--line)}
 .article-chapters a:hover{color:var(--mint)}
 .article-body>h2[id]{scroll-margin-top:32px}
 @media(max-width:900px){
- .article-reading>aside{display:block;width:100%;max-width:740px;margin-inline:auto}
+ .article-reading>aside:has(.article-chapters){display:block;width:100%;max-width:740px;margin-inline:auto}
  .article-reading>.article-body{grid-column:1}
 }
