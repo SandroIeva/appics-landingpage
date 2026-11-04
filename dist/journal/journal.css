@@ -166,9 +166,9 @@ html.journal-motion-ready [data-journal-reveal]:not(.is-revealed){opacity:0}
 .article-reading>.article-body{grid-column:2}
 .article-reading>aside:has(.article-chapters){position:sticky;top:36px;align-self:start;max-width:300px;max-height:calc(100dvh - 140px);overflow:auto}
 .article-chapters ol{margin:0;padding:0;list-style:none}
-.article-chapters li+li{margin-top:22px}
-.article-chapters a{display:block;max-inline-size:23ch;overflow-wrap:anywhere;font-size:16px;line-height:1.45;color:var(--text);text-decoration:none}
-.article-chapters>.eyebrow{font-size:15px}
+.article-chapters li+li{margin-top:26px}
+.article-chapters a{display:block;max-inline-size:21ch;overflow-wrap:anywhere;font-size:16px;line-height:1.45;color:var(--text);text-decoration:none}
+.article-chapters>.eyebrow{font-size:15px;color:#fff}
 .article-chapters a:hover,.article-chapters a[aria-current="location"]{color:var(--mint)}
 .article-body>h2[id]{scroll-margin-top:32px}
 @media(max-width:900px){
