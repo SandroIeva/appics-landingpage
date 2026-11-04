@@ -176,6 +176,6 @@ html.journal-motion-ready [data-journal-reveal]:not(.is-revealed){opacity:0}
  .article-reading>.article-body{grid-column:1}
 }
 
-.article-header>.eyebrow{font-size:clamp(16px,1.5vw,21px)}
+.article-header>.eyebrow{font-size:clamp(15px,1.4vw,19px)}
 .article-header>.article-deck{font-size:clamp(20px,1.75vw,25px)}
 .article-byline{font-size:16px;margin-top:46px}
