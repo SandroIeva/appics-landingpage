@@ -18,10 +18,6 @@ filters.forEach(b=>b.addEventListener('click',()=>{selected=b.dataset.filter;app
 search?.addEventListener('input',applyFilters);
 document.querySelector('.journal-search')?.addEventListener('submit',e=>{e.preventDefault();applyFilters()});
 if(filters.length)applyFilters();
-document.querySelector('.copy-story')?.addEventListener('click',async event=>{
- try{await navigator.clipboard.writeText(location.href.split('?')[0]);event.target.textContent='Link copied ✓'}catch{event.target.textContent='Copy the address from your browser'}
-});
-
 // Bounded sticky notes move more slowly than the story column, without hijacking scroll.
 const editorialReduced=matchMedia('(prefers-reduced-motion: reduce)');
 const editorialWide=matchMedia('(min-width: 901px)');
